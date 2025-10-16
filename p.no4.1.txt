@@ -1,0 +1,5 @@
+import pandas as pd
+data = [10, 20, 30, 40, 50]
+Series = pd.Series(data)
+print("one dimensional array-like object(Pandas Series):")
+print(Series)
