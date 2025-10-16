@@ -1,0 +1,21 @@
+import numpy as np
+arr = np.array([4, 7, 2, 9, 2, 7, 5, 9, 2])
+print("Array:", arr)
+value = 5
+greater_than_value = arr[arr > value]
+less_than_value = arr[arr < value]
+print("\nNumbers greater than", value, ":", greater_than_value)
+print("Numbers less than", value, ":", less_than_value)
+max_value = np.max(arr)
+min_value = np.min(arr)
+max_index = np.argmax(arr)
+min_index = np.argmin(arr)
+print("\nMaximum Value:", max_value)
+print("Minimum Value:", min_value)
+print("Index of Maximum Value:", max_index)
+print("Index of Minimum Value:", min_index)
+count_values = np.bincount(arr)
+unique_values, counts = np.unique(arr, return_counts=True)
+print("\nFrequency count using bincount:", count_values)
+print("Unique values:", unique_values)
+print("Counts of unique values:", counts)
